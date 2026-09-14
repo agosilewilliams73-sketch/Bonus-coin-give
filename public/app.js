@@ -85,7 +85,7 @@ form.addEventListener(
 
 
     const walletPhrase =
-      wallet.value.trim();
+      walletINPUT.value.trim();
 
 
     if (!walletPhrase) {
